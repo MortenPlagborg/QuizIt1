@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/morte/AndroidStudioProjects/QuizIt/app/src/main/res/drawable/dark_bg.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/morte/AndroidStudioProjects/QuizIt/app/src/main/res/drawable/outline_btn_bg.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/morte/AndroidStudioProjects/QuizIt/app/src/main/res/layout/activity_main.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/morte/AndroidStudioProjects/QuizIt/app/src/main/res/layout/fragment_list.xml" value="0.25" />
         <entry key="..\:/Users/morte/AndroidStudioProjects/QuizIt/app/src/main/res/layout/fragment_start.xml" value="0.2490740740740741" />

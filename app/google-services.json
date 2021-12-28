@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127188005918",
+    "project_id": "quizit-b08c1",
+    "storage_bucket": "quizit-b08c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127188005918:android:84535da34655a7060eaa0f",
+        "android_client_info": {
+          "package_name": "com.example.quizit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127188005918-plg7o5egrs7cc2cu0gdhhbdm8o90d1jv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzsDu0vNJ_bcIjb-yz6XbN8toc6DF7l8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127188005918-plg7o5egrs7cc2cu0gdhhbdm8o90d1jv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

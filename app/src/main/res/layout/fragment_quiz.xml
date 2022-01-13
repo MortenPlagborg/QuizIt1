@@ -63,10 +63,13 @@
 
     <ProgressBar
         android:id="@+id/quiz_question_progress"
-        style="?android:attr/progressBarStyle"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginTop="32dp"
+        android:progress="50"
+        android:progressDrawable="@drawable/circular_progress"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/quiz_question_number"
         app:layout_constraintEnd_toEndOf="@+id/quiz_title"
         app:layout_constraintHorizontal_bias="0.503"

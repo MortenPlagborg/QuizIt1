@@ -35,7 +35,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
     private FirebaseFirestore firebaseFirestore;
     private FirebaseAuth firebaseAuth;
     private String currentUserId;
-    private String quizName;
+    private String quizName = "Space Science";
     private String quizId;
 
     //UI elements
@@ -103,7 +103,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
 
         //get quizId
         quizId = QuizFragmentArgs.fromBundle(getArguments()).getQuizId();
-        quizName = QuizFragmentArgs.fromBundle(getArguments()).getQuizName();
+        //quizName = QuizFragmentArgs.fromBundle(getArguments()).getQuizName();
         totalQuestionsToAnswer = QuizFragmentArgs.fromBundle(getArguments()).getTotalQuestions();
 
         // Get all questions from the quizList in firestore
@@ -140,7 +140,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
     }
 
     private void loadQuestion(int questionNum) {
-        questionNumber.setText(questionNum + "");
+        questionNumber.setText(questionNum);
 
         questionText.setText(questionsToAnswer.get(questionNum-1).getQuestion());
 
@@ -167,6 +167,7 @@ public class QuizFragment extends Fragment implements View.OnClickListener {
                 //update timer
                 questionTime.setText(millisUntilFinished/1000 + "");
 
+                //progress in percent
                 Long percent = millisUntilFinished/(timeToAnswer*10);
                 questionProgress.setProgress(percent.intValue());
             }

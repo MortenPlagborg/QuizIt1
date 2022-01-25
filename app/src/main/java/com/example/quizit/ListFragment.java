@@ -66,7 +66,7 @@ public class ListFragment extends Fragment implements QuizListAdapter.OnQuizList
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        // initialize viewmodel klasse
         quizListViewModel = new ViewModelProvider(getActivity()).get(QuizListViewModel.class);
         quizListViewModel.getQuizListModelData().observe(getViewLifecycleOwner(), new Observer<List<QuizListModel>>() {
             @Override
@@ -85,6 +85,6 @@ public class ListFragment extends Fragment implements QuizListAdapter.OnQuizList
     public void onItemClicked(int position) {
         ListFragmentDirections.ActionListFragmentToDetailsFragment action = ListFragmentDirections.actionListFragmentToDetailsFragment();
         action.setPosition(position);
-            navController.navigate(action);
+        navController.navigate(action);
     }
 }
